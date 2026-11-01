@@ -1,0 +1,17 @@
+{
+  "extName": { "message": "Popperz" },
+  "extDescription": { "message": "Bloqueur de pub qui tue les popunders, les clics piégés et les calques invisibles." },
+  "popupTagline": { "message": "Pubs bloquées, clics libérés." },
+  "siteProtection": { "message": "Protection sur ce site" },
+  "siteOn": { "message": "Activée" },
+  "siteOff": { "message": "Désactivée" },
+  "reloadHint": { "message": "Recharge la page pour appliquer." },
+  "statAds": { "message": "pubs et traqueurs bloqués" },
+  "statTraps": { "message": "pièges déjoués" },
+  "zapButton": { "message": "Zapper un élément" },
+  "zapHint": { "message": "Clique sur l'élément à faire disparaître. Échap pour annuler." },
+  "rulesTitle": { "message": "Éléments zappés sur ce site" },
+  "rulesEmpty": { "message": "Aucun pour l'instant." },
+  "removeRule": { "message": "Supprimer" },
+  "notApplicable": { "message": "Popperz n'agit pas sur cette page." }
+}

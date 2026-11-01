@@ -1,0 +1,12 @@
+Popperz
+Copyright (C) 2026 Matthieu Izac
+Licensed under the GNU General Public License v3.0 only. See LICENSE.
+
+This extension bundles third-party material:
+
+- EasyList and EasyPrivacy (https://easylist.to), converted into rules/easylist.json,
+  rules/easyprivacy.json and the cosmetic/ files. Dual licensed under GPLv3 and
+  Creative Commons Attribution-ShareAlike 3.0. Thanks to the EasyList authors.
+
+- Outfit typeface (https://github.com/Outfitio/Outfit-Fonts), fonts/outfit-latin.woff2.
+  Licensed under the SIL Open Font License 1.1. See fonts/OFL.txt.

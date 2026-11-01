@@ -1,0 +1,15 @@
+node_modules/
+.output/
+.wxt/
+dist/
+coverage/
+test-results/
+playwright-report/
+*.log
+.env
+.env.*
+
+# graphify : fichiers propres à cette machine
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_root

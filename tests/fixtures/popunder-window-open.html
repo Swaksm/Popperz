@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>popunder window.open</title>
+<button id="play">Lecture</button>
+<script>
+  play.addEventListener('click', () => { play.textContent = 'played'; });
+  document.addEventListener('click', () => { window.open('http://127.0.0.1:4173/blank.html?ad=window-open'); window.focus(); });
+</script>

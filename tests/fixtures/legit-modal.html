@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>legit modal</title>
+<div id="backdrop" style="position:fixed;inset:0;z-index:10;background:rgba(0,0,0,0.5);display:grid;place-items:center">
+  <div style="background:#fff;padding:24px">
+    <p>Accepter les conditions ?</p>
+    <button id="accept">Accepter</button>
+  </div>
+</div>
+<script>
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) backdrop.dataset.closed = 'yes'; });
+  accept.addEventListener('click', () => { accept.textContent = 'accepted'; });
+</script>

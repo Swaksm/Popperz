@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Popperz</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/icon/48.png" width="28" height="28" alt="" />
+      <div>
+        <h1 data-i18n="extName">Popperz</h1>
+        <p class="tagline" data-i18n="popupTagline"></p>
+      </div>
+    </header>
+
+    <p id="not-applicable" class="muted" data-i18n="notApplicable" hidden></p>
+
+    <main id="controls" hidden>
+      <section class="site">
+        <div>
+          <p class="label" data-i18n="siteProtection"></p>
+          <p id="site-host" class="host"></p>
+        </div>
+        <label class="switch">
+          <input id="site-toggle" type="checkbox" role="switch" />
+          <span class="track" aria-hidden="true"></span>
+          <span id="site-state" class="state"></span>
+        </label>
+      </section>
+      <p id="reload-hint" class="hint" data-i18n="reloadHint" hidden></p>
+
+      <section class="stats">
+        <div><strong id="stat-ads">0</strong><span data-i18n="statAds"></span></div>
+        <div><strong id="stat-traps">0</strong><span data-i18n="statTraps"></span></div>
+      </section>
+
+      <button id="zap" class="zap" type="button" data-i18n="zapButton"></button>
+      <p class="hint" data-i18n="zapHint"></p>
+
+      <section class="rules">
+        <h2 data-i18n="rulesTitle"></h2>
+        <ul id="rules"></ul>
+        <p id="rules-empty" class="muted" data-i18n="rulesEmpty"></p>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "extName": { "message": "Popperz" },
+  "extDescription": { "message": "Ad blocker that kills popunders, hijacked clicks and invisible overlays." },
+  "popupTagline": { "message": "Ads blocked, clicks set free." },
+  "siteProtection": { "message": "Protection on this site" },
+  "siteOn": { "message": "On" },
+  "siteOff": { "message": "Off" },
+  "reloadHint": { "message": "Reload the page to apply." },
+  "statAds": { "message": "ads and trackers blocked" },
+  "statTraps": { "message": "traps foiled" },
+  "zapButton": { "message": "Zap an element" },
+  "zapHint": { "message": "Click the element to remove. Esc to cancel." },
+  "rulesTitle": { "message": "Zapped on this site" },
+  "rulesEmpty": { "message": "None yet." },
+  "removeRule": { "message": "Remove" },
+  "notApplicable": { "message": "Popperz doesn't act on this page." }
+}

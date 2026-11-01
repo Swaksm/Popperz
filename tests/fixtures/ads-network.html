@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>ads network</title>
+<p>Contenu</p>
+<script>
+  // Loads the "ad" resources after the test has installed its blocking rule.
+  window.loadAds = () => new Promise((resolve) => {
+    const results = {};
+    const done = (kind, state) => { results[kind] = state; if (Object.keys(results).length === 2) resolve(results); };
+    const script = document.createElement('script');
+    script.src = 'http://127.0.0.1:4173/ads/ad.js?' + Math.random();
+    script.onload = () => done('script', 'loaded');
+    script.onerror = () => done('script', 'blocked');
+    document.head.append(script);
+    const img = new Image();
+    img.onload = () => done('image', 'loaded');
+    img.onerror = () => done('image', 'blocked');
+    img.src = 'http://127.0.0.1:4173/ads/ad.png?' + Math.random();
+  });
+</script>

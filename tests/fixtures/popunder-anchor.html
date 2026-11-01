@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>popunder anchor</title>
+<button id="play">Lecture</button>
+<script>
+  const detached = new URLSearchParams(location.search).has('detached');
+  document.addEventListener('click', (e) => {
+    if (!e.isTrusted) return;
+    const a = document.createElement('a');
+    a.href = 'http://127.0.0.1:4173/blank.html?ad=anchor';
+    a.target = '_blank';
+    if (!detached) document.body.append(a);
+    a.click();
+  });
+</script>

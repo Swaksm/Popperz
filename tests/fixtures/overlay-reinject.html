@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>overlay reinject</title>
+<button id="play">Lecture</button>
+<script>
+  let clicks = 0;
+  play.addEventListener('click', () => { play.textContent = `played ${++clicks}`; });
+  // Removes and re-adds a fresh invisible layer every second, like aggressive ad scripts.
+  setInterval(() => {
+    document.getElementById('trap')?.remove();
+    const trap = document.createElement('div');
+    trap.id = 'trap';
+    trap.style.cssText = 'position:fixed;inset:0;z-index:999999;opacity:0.01;background:#000';
+    trap.onclick = () => { document.title = 'trapped'; };
+    document.body.append(trap);
+  }, 1000);
+</script>

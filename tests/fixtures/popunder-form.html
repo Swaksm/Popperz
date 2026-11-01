@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>popunder form</title>
+<button id="play">Lecture</button>
+<script>
+  document.addEventListener('click', () => {
+    const f = document.createElement('form');
+    f.action = 'http://127.0.0.1:4173/blank.html';
+    f.method = 'get';
+    f.target = '_blank';
+    f.innerHTML = '<input name="ad" value="form">';
+    document.body.append(f);
+    f.submit();
+  });
+</script>

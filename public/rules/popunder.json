@@ -1,0 +1,10 @@
+[
+  { "id": 1, "priority": 1, "action": { "type": "block" }, "condition": { "requestDomains": [
+    "popads.net", "popcash.net", "propellerads.com", "onclickads.net", "onclkds.com", "clickadu.com",
+    "hilltopads.net", "popmyads.com", "adcash.com", "exoclick.com", "juicyads.com", "popunder.net"
+  ] } },
+  { "id": 2, "priority": 1, "action": { "type": "block" }, "condition": { "requestDomains": [
+    "popads.net", "popcash.net", "propellerads.com", "onclickads.net", "onclkds.com", "clickadu.com",
+    "hilltopads.net", "popmyads.com", "adcash.com", "exoclick.com", "juicyads.com", "popunder.net"
+  ], "resourceTypes": ["main_frame"] } }
+]

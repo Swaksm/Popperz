@@ -1,0 +1,27 @@
+{
+  "name": "popperz",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bloqueur de pub anti-popunder pour Chrome et Opera GX",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "typecheck": "wxt prepare && tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "wxt build && playwright test",
+    "icons": "node scripts/export-icons.ts",
+    "lists": "node scripts/build-lists.ts",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.20.5",
+    "happy-dom": "^21.0.4",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5",
+    "wxt": "^0.21.5"
+  }
+}

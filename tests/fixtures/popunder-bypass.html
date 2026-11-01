@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>popunder bypass</title>
+<button id="play">Lecture</button>
+<script>
+  // Grabs a pristine window.open from a fresh iframe, before any content script runs in it.
+  document.addEventListener('click', (e) => {
+    if (!e.isTrusted) return;
+    const frame = document.createElement('iframe');
+    frame.style.display = 'none';
+    document.body.append(frame);
+    frame.contentWindow.open('http://127.0.0.1:4173/blank.html?ad=bypass');
+  });
+</script>
